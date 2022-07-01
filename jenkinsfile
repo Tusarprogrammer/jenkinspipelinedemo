@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build Stage'
+            }
+        }
+        stage('Sit') {
+            steps {
+                echo 'Sit Stage'
+            }
+        }
+        stage('SonarQube') {
+            steps {
+                echo 'Sonar Stage'
+            }
+        }
+        stage('Uat') {
+            steps {
+                echo 'Uat Stage'
+            }
+        }
+        stage('Deployment') {
+            steps {
+                echo 'Deployment Stage'
+            }
+        }
+    }
+}
